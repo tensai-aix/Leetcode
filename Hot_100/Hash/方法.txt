@@ -1,0 +1,12 @@
+对于要快速判断是否存在的问题，就要用到哈希。
+用uthash这个库，主要用的方法有HASH_ADD_INT（第二个参数键值名称）、HASH_DEL、HASH_FIND_INT（第二个参数键值的地址）、HASH_ITER,分别对应增、删、查、遍历
+HASH_FIND本质上是根据键去找，因此类型是键的类型，如键值是int就FIND_FOND_INT,结构体就PTR.ADD同理
+一般一个头指针head，其他指针则是根据情况定义（一般定义较多）
+哈希节点不要忘了初始化为NULL
+uthash的用法参考t_128_Hash、t_3_origin
+另外，malloc动态分配内存，calloc功能与malloc类似且分配完后内容全部置为0，realloc重新分配，一般用法是满了后分配两倍现有内存
+注意这些内存操作时间复杂度较高（时间复杂度主要来源之一），要尽量减少这些操作
+多维数组是要先malloc分配最外层的，然后一层层往里malloc分配。
+涉及数组的快速操作有memcpy，复制两块内存内容，以及memcmp，比较两块内存内容（strcmp和strcpy是特殊版）
+int** returnColumnSizes是传递了数组的指针，本质上只是一维数组
+常规数据结构（int）定义时自动分配内存，但是指针类型（int*）要显式动态分配内存
