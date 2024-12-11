@@ -229,7 +229,7 @@ void print(BPlusTree* node){
 }
 
 /**
- * 函数作用：中序遍历打印B+树
+ * 函数作用：先序遍历打印B+树
  */
 void Inserve(BPlusTree* node,int level){
     for(int i = 0;i < level;i++){

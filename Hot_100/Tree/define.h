@@ -2,6 +2,7 @@
 #include <cstddef>
 #include <ssp/string.h>
 #include <math.h>
+#include <stdbool.h>
 
 struct TreeNode {
     int val;
