@@ -9,6 +9,9 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "algorithm": "cpp",
-        "string_view": "c"
+        "string_view": "c",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp"
     }
 }
