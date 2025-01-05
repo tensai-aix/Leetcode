@@ -1,4 +1,5 @@
 // interesting,most important is to write out the func
+// 这题给了我个冲击，主要是动态规划并不一定得是O(n)
 #include <climits>
 #include <math.h>
 
