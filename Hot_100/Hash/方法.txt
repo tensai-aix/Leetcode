@@ -1,5 +1,5 @@
 对于要快速判断是否存在的问题，就要用到哈希。
-用uthash这个库，主要用的方法有HASH_ADD_INT（第二个参数键值名称）、HASH_DEL、HASH_FIND_INT（第二个参数键值的地址）、HASH_ITER,分别对应增、删、查、遍历
+用uthash这个库，主要用的方法有HASH_ADD_INT（第二个参数是主键名称）、HASH_DEL、HASH_FIND_INT（第二个参数是主键地址）、HASH_ITER,分别对应增、删、查、遍历
 HASH_FIND本质上是根据键去找，因此类型是键的类型，如键值是int就FIND_FOND_INT,结构体就PTR.ADD同理
 一般一个头指针head，其他指针则是根据情况定义（一般定义较多）
 哈希节点不要忘了初始化为NULL
